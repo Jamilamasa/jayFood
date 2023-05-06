@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .button {
+        @apply cursor-pointer border-none bg-btn-bg text-white py-[0.75rem] px-[3rem] flex justify-around items-center rounded-3xl font-bold hover:bg-[#2c0d00] active:bg-[#2c0d00]
+    }
+    .icon {
+        @apply w-[1.35rem] h-[1.35rem] mr-2
+    }
+    .badge {
+        @apply bg-[#b94517] py-[0.25rem] px-[1rem] rounded-3xl ml-4 font-bold group-hover:bg-[#92320c] group-active:bg-[#92320c]
+    }
+    .bump {
+      @apply animate-bump-ease
+    }
+}
+
+

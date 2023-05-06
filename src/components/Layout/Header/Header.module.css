@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .header {
+        @apply fixed top-0 left-0 w-full h-20 text-white flex items-center py-0 px-[10%] justify-between z-10 bg-theme-bg;
+        shadow: 0 2px 8px rgba(0, 0, 0, 0.25)
+    }
+    
+
+    .main-image {
+        @apply w-[110%] h-96 z-0 overflow-hidden
+    }
+
+    .main-image img {
+        @apply w-[110%] h-full object-cover;
+        transform: rotateZ(-5deg) translateY(-4rem) translateX(-1rem);
+      }
+}
